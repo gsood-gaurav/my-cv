@@ -3,10 +3,10 @@
 #+BEGIN_SRC emacs-lisp :exports none  :results none :eval always
 (setq org-latex-logfiles-extensions (quote ("lof" "lot" "tex~" "aux" "idx" "log" "out" "toc" "nav" "snm" "vrb" "dvi" "fdb_latexmk" "blg" "brf" "fls" "entoc" "ps" "spl" "bbl" "xmpi" "run.xml" "bcf")))
 (add-to-list 'org-latex-classes
-             '("altacv" "\\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+             '("altacv" "\\documentclass[10pt,letter,ragged2e,withhyper]{altacv}
 
 % Change the page layout if you need to
-\\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\\geometry{left=1.25cm,right=1.0cm,top=1.5cm,bottom=1.5cm}
 
 % Use roboto and lato for fonts
 \\renewcommand{\\familydefault}{\\sfdefault}
@@ -48,7 +48,7 @@
         ))
 #+END_SRC
 #+LATEX_CLASS: altacv
-#+LATEX_HEADER: \columnratio{0.6} % Set the left/right column width ratio to 6:4.
+#+LATEX_HEADER: \columnratio{1.075} % Set the left/right column width ratio to 6:4.
 #+LATEX_HEADER: \usepackage[bottom]{footmisc}
 *** Bibliography
 # #+LATEX_HEADER: \DeclareNameAlias{sortname}{last-first}
@@ -73,22 +73,19 @@
 * CV Header :ignore:
 ** Photo & Tagline :ignore:
 #+begin_export latex
-\name{Aidan Scannell}
-\photoR{2.8cm}{aidan_portrait.jpeg}
-\tagline{PhD Researcher}
+\name{Gaurav Sood}
+\photoR{2.8cm}{gaurav.jpeg}
+\tagline{Sr. Data Scientist}
 #+end_export
 
 ** Personal Info :ignore:
 #+begin_export latex
 \personalinfo{
-  \homepage{www.aidanscannell.com}
-  \email{scannell.aidan@gmail.com}
-  \phone{+44 787 558 3912}
-  \location{Bristol, UK}
-  \github{aidanscannell}
-  \linkedin{aidan-scannell-82522789/}
-  \dob{22 April 1994}
-  \driving{UK Driving Licence}
+  \email{gsood.gaurav@gmail.com}
+  \phone{+91 9632714987}
+  \location{Bangalore, India}
+  \github{github.com/gsood-gaurav}
+  \linkedin{linkedin.com/in/gsood-gaurav/}
 }
 \makecvheader
 #+end_export
@@ -106,16 +103,42 @@
 ** Personal Statement Amazon :ignore:
 #+begin_export latex
  \begin{quote}
- ``I am a PhD researcher with interests at the intersection of probabilistic machine learning and control theory. A great deal of my work focuses on Bayesian non-parametric methods, specifically Gaussian processes, variational inference and decision-making under uncertainty.''
+"Senior Data Scientist with total 14 years of experience, and 7 years of experience in Machine Learning, developing open source software in Python, C++, contributing as both individual contributor and team leader, working on Machine Learning, conceptualizing, designing and implementing end to end solutions. Currently working on ideas around Natural Language Processing and Reinforcement Learning to automate Hardware Diagnostics. Have used both traditional machine learning methods like Bayesian Networks, Conditional Random Fields and modern deep learning methods LSTMs, Transformer based models like BERT and GPT, using TensorFlow Recently started using Julia and Flux for Machine Learning.
+"
  \end{quote}
 #+end_export
+** Skills
+{{{cvtag(Python)}}}
+{{{cvtag(PyTorch)}}}
+{{{cvtag(TensorFlow)}}}
+{{{cvtag(JAX)}}}
+{{{cvtag(Julia)}}}
+{{{cvtag(Flux)}}}
+{{{cvtag(NumPy)}}}
+{{{cvtag(SciPy)}}}
+{{{cvtag(Matplotlib)}}}
+
+
+{{{divider}}}
+
+{{{cvtag(Deep Learning)}}}
+{{{cvtag(Large Language Models)}}}
+{{{cvtag(Generative AI)}}}
+{{{cvtag(Probabilistic Programming)}}}
+{{{cvtag(Reinforcement Learning)}}}
+{{{cvtag(Open Source Software)}}}
+
 ** Experience
-*** PhD Researcher :ignore:
-{{{cvevent(PhD Researcher, University of Bristol,Sept 2018 -- Ongoing, Bristol\, UK)}}}
+*** Sr Data Scientist                                                :ignore:
+{{{cvevent(Sr. Data Scientist, HP Inc. June 2021 -- Ongoing, Bangalore\, India)}}}
 
-# Researching methods for probabilistic inference and control in multimodal dynamical systems. EPSRC Centre for Doctoral Training in Future Autonomous and Robotic Systems (FARSCOPE).
-Researching methods for data-efficient learning and control in multimodal dynamical systems. EPSRC Centre for Doctoral Training in Future Autonomous and Robotic Systems (FARSCOPE).
-
+- Designed and Developed Large Language Models Based application for web content filtering/selection.
+- Mentored three data science interns on Hardware logs analysis using Graph
+  Neural Networks and Large Language Models(GPT-2).
+- Fine Tuned Small language Chat model on custom data using 4-bit quantized models.
+- Developed Telemetery data analysis pipline using Large Language Model
+  embeddings, UMAP, Variational AutoEncoder.
+- 
 {{{cvtag(Probabilistic modelling)}}}
 {{{cvtag(Gaussian processes)}}}
 {{{cvtag(Variational inference)}}}
@@ -123,48 +146,51 @@ Researching methods for data-efficient learning and control in multimodal dynami
 {{{cvtag(Trajectory optimisation)}}}
 # {{{cvtag(Model-based reinforcement learning)}}}
 
-*** Teaching Assistant :ignore:
+*** Software Engineer Machine Learning                               :ignore:
 {{{par-div}}}
-{{{cvevent(Teaching Assistant, University of Bristol,Sept 2018 -- Ongoing, Bristol\, UK)}}}
+{{{cvevent(Software Engineer Machine Learning, HP Inc. June 2017 -- 2021, Bangalore\, India)}}}
 
-Alongside my PhD I have assisted teaching:
-- [[https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=19%2F20&unitCode=COMS30007][Machine Learning COMS30007]]
-  # This course introduced student to probabilistic machine learning: bayesian linear regression, Gaussian processes, probabilistic PCA, Bayesian optimisation.
-- [[https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=19%2F20&unitCode=COMSM0012][Robotic Systems COMSM0012]]
-  # This course introduced student to probabilistic robotics, e.g. particle filtering.
-- [[https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=19/20\&unitCode=EMATM0042][Intelligent Information Systems EMATM0042]]
-
+- Analyzed Sales Time Series Data (Short term/Long term forecasting) using
+  Prophet, ARIMA, Gradient Boosting models.
+- Behavior Modelling using Tree Based Models, SHAP, UMAP
+- Proposed methodology which specifies automated hardware diagnostics problem
+   in Reinforcement Learning Framework.
+- Design and implemented software module which models environment for
+  Reinforcement Learning agent to learn using Monte Carlo Methods.  
+- Worked on Conditional Random Fields for Sequence Tagging and Information
+  extraction.
+- 
 {{{cvtag(Communication)}}}
 {{{cvtag(Active listening)}}}
 {{{cvtag(Teaching)}}}
 
-*** Mott MacDonald :ignore:noexport:
+*** Senior Software Engineer 
 {{{par-div}}}
-
-{{{cvevent(Mechanical Engineer Intern,Mott MacDonald,June 2015 -- August 2015, London\, UK)}}}
-
-# I worked as a mechanical engineer within the building services division where I developed my
-# teamwork skills and learned the importance of knowledge management.
-# I was in charge of optimising the heating, ventilation and air-conditioning of a building a
-# Hackney Wick underground station.
-# I met with external architects to communicate our ideas and I personally overcame logistical issues
-# and improved a systems efficiency, resulting in the designs approval.
-# I consistently met deadlines whilst working under pressure and was offered future employment.
-# This internship strengthened my desire to move away from engineering and pursue a research driven
-# career involving mathematics and programming.
-
-- Developed teamwork skills, learning the importance of knowledge management within a team.
-- Overcame logistical issues and improved a system’s efficiency, resulting in the design’s approval.
-- Consistently met deadlines whilst working under pressure.
-- Conducted a feasibility study and estimated project costs that informed subsequent action.
-- Located an error and proposed a solution. Communicating this to relevant managers resulted in its successful implementation.
-- Mott MacDonald offered me future employment following my summer placement.
-  
+{{{cvevent(Senior Software Engineer, HP Inc. June 2015 -- 2017, Bangalore\, India)}}}
+- Designed and Developed a parser for PostScript Language to extract images and
+  meta data which was impacting 50000 hp customers and saving 5 million dollars.
+- Designed and developed Telemetery module in python.
+- Led team of 7 software developers designing and implementing open source
+  software used by over 1 million customers.
+- Worked on understanding PDF specification, design and implemented PDF document
+  processing using PDF libraries like iText and PDFium
+- Lead a team of six people which delived Imaging Processing Solutions to over
+  10 PSU banks in india
+ 
 {{{cvtag(Engineering)}}}
 {{{cvtag(Teamwork)}}}
 {{{cvtag(Industry)}}}
 
-** Publications
+*** Software Engineer 
+{{{par-div}}}
+{{{cvevent(Software Engineer, HP Inc. June 2010 -- 2015, Bangalore\, India)}}}
+
+** Certifications
+   {{{cvevent(Deep Learning Specialization, Coursera Oct-2021 Credential ID G8PG2GY6WFS))}}}
+   {{{cvevent(Reinforcement Learning Specialization, Coursera Sept-2021
+   Credential IDD3LDNU8BRW68)}}}
+   {{{cvevent(Introduction to Quantum Computing, Coursera May-2021 Credential ID
+   RXQHLEC2WYC8)}}}
 #+begin_export latex
 \nocite{*}
 % \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
@@ -342,40 +368,16 @@ Each year, as part of Formula Student, students design, build and race a single 
 * CV Column 2 :ignore:
 # Switch to the right column - will automatically move to the next page.
 #+begin_export latex
-\switchcolumn
 #+end_export
 
-** Skills
-{{{cvtag(Python)}}}
-{{{cvtag(TensorFlow)}}}
-{{{cvtag(GPflow)}}}
-{{{cvtag(JAX)}}}
-{{{cvtag(NumPy)}}}
-{{{cvtag(SciPy)}}}
-{{{cvtag(Matplotlib)}}}
-{{{cvtag(GPy)}}}
-
-{{{divider}}}
-
-{{{cvtag(Java)}}}
-{{{cvtag(C++)}}}
-{{{cvtag(MATLAB)}}}
-{{{cvtag(ROS)}}}
-
-{{{divider}}}
-
-
-{{{cvtag(Git/GitHub)}}}
-{{{cvtag(LaTeX)}}}
-{{{cvtag(Org-mode)}}}
 
 ** Education
-{{{cvevent(PhD\ in Bayesian Machine Learning for Robotic Control, University of Bristol, Sept 2018 - Ongoing,)}}}
-- \faBook Probabilistic Inference for Learning and Control in Multimodal Dynamical Systems
+{{{cvevent(Msc Research \ Speech Recoginition, Indian Institute of Science Bangalore 2006-2009)}}}
+- \faBook Speech Recognition using Support Vector Machines
 
 {{{divider}}}
 
-{{{cvevent(Gaussian Process and Uncertainty Quantification Summer School (GPSS), University of Sheffield, Sept 2019 - Sept 2019,)}}}
+{{{cvevent(BTech Electronics and Communication Engg, GNE Ludhiana 2001-2005)}}}
 
 {{{divider}}}
 
