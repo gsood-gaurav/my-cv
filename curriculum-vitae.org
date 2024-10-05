@@ -1,54 +1,56 @@
 * Config/Preamble :noexport:
 ** LaTeX Config
 #+BEGIN_SRC emacs-lisp :exports none  :results none :eval always
-(setq org-latex-logfiles-extensions (quote ("lof" "lot" "tex~" "aux" "idx" "log" "out" "toc" "nav" "snm" "vrb" "dvi" "fdb_latexmk" "blg" "brf" "fls" "entoc" "ps" "spl" "bbl" "xmpi" "run.xml" "bcf")))
-(add-to-list 'org-latex-classes
-             '("altacv" "\\documentclass[10pt,letter,ragged2e,withhyper]{altacv}
-
-% Change the page layout if you need to
-\\geometry{left=1.25cm,right=1.0cm,top=1.5cm,bottom=1.5cm}
-
-% Use roboto and lato for fonts
-\\renewcommand{\\familydefault}{\\sfdefault}
-
-% Change the colours if you want to
-\\definecolor{SlateGrey}{HTML}{2E2E2E}
-\\definecolor{LightGrey}{HTML}{666666}
-\\definecolor{DarkPastelRed}{HTML}{450808}
-\\definecolor{PastelRed}{HTML}{8F0D0D}
-\\definecolor{GoldenEarth}{HTML}{E7D192}
-\\colorlet{name}{black}
-\\colorlet{tagline}{PastelRed}
-\\colorlet{heading}{DarkPastelRed}
-\\colorlet{headingrule}{GoldenEarth}
-\\colorlet{subheading}{PastelRed}
-\\colorlet{accent}{PastelRed}
-\\colorlet{emphasis}{SlateGrey}
-\\colorlet{body}{LightGrey}
-
-% Change some fonts, if necessary
-\\renewcommand{\\namefont}{\\Huge\\rmfamily\\bfseries}
-\\renewcommand{\\personalinfofont}{\\footnotesize}
-\\renewcommand{\\cvsectionfont}{\\LARGE\\rmfamily\\bfseries}
-\\renewcommand{\\cvsubsectionfont}{\\large\\bfseries}
-
-% Change the bullets for itemize and rating marker
-% for \cvskill if you want to
-\\renewcommand{\\itemmarker}{{\\small\\textbullet}}
-\\renewcommand{\\ratingmarker}{\\faCircle}
-"
-
-               ("\\cvsection{%s}" . "\\cvsection*{%s}")
-               ("\\cvevent{%s}" . "\\cvevent*{%s}")))
-(setq org-latex-packages-alist 'nil)
-(setq org-latex-default-packages-alist
-      '(("rm" "roboto"  t)
-        ("defaultsans" "lato" t)
-        ("" "paracol" t)
-        ))
+  (setq org-latex-logfiles-extensions (quote ("lof" "lot" "tex~" "aux" "idx" "log" "out" "toc" "nav" "snm" "vrb" "dvi" "fdb_latexmk" "blg" "brf" "fls" "entoc" "ps" "spl" "bbl" "xmpi" "run.xml" "bcf")))
+  (add-to-list 'org-latex-classes
+               '("altacv" "\\documentclass[10pt,letter,ragged2e,withhyper]{altacv}
+  
+  % Change the page layout if you need to
+  \\geometry{left=1.25cm,right=1.0cm,top=1.5cm,bottom=1.5cm}
+  
+  % Use roboto and lato for fonts
+  \\renewcommand{\\familydefault}{\\sfdefault}
+  
+  % Change the colours if you want to
+  \\definecolor{SlateGrey}{HTML}{2E2E2E}
+  \\definecolor{LightGrey}{HTML}{666666}
+  \\definecolor{DarkPastelRed}{HTML}{450808}
+  \\definecolor{PastelRed}{HTML}{8F0D0D}
+  \\definecolor{GoldenEarth}{HTML}{E7D192}
+  \\colorlet{name}{black}
+  \\colorlet{tagline}{PastelRed}
+  \\colorlet{heading}{DarkPastelRed}
+  \\colorlet{headingrule}{GoldenEarth}
+  \\colorlet{subheading}{PastelRed}
+  \\colorlet{accent}{PastelRed}
+  \\colorlet{emphasis}{SlateGrey}
+  \\colorlet{body}{LightGrey}
+  
+  % Change some fonts, if necessary
+  \\renewcommand{\\namefont}{\\Huge\\rmfamily\\bfseries}
+  \\renewcommand{\\personalinfofont}{\\footnotesize}
+  \\renewcommand{\\cvsectionfont}{\\LARGE\\rmfamily\\bfseries}
+  \\renewcommand{\\cvsubsectionfont}{\\large\\bfseries}
+  
+  % Change the bullets for itemize and rating marker
+  % for \cvskill if you want to
+  \\renewcommand{\\itemmarker}{{\\small\\textbullet}}
+  \\renewcommand{\\ratingmarker}{\\faCircle}
+  "
+  
+                 ("\\cvsection{%s}" . "\\cvsection*{%s}")
+                 ("\\cvevent{%s}" . "\\cvevent*{%s}")))
+  (setq org-latex-packages-alist 'nil)
+  (setq org-latex-default-packages-alist
+        '(("rm" "roboto"  t)
+          ("defaultsans" "lato" t)
+          ("" "paracol" t)
+          ))
 #+END_SRC
 #+LATEX_CLASS: altacv
+#+BEGIN_COMMENT
 #+LATEX_HEADER: \columnratio{1.075} % Set the left/right column width ratio to 6:4.
+#+END_COMMENT
 #+LATEX_HEADER: \usepackage[bottom]{footmisc}
 *** Bibliography
 # #+LATEX_HEADER: \DeclareNameAlias{sortname}{last-first}
@@ -60,7 +62,7 @@
 #+LATEX_HEADER: \usepackage[style=trad-abbrv,sorting=none,sortcites=true,doi=false,url=false,giveninits=true,hyperref]{biblatex}
 
 ** Exporter Settings
-#+AUTHOR: Aidan Scannell
+#+AUTHOR: Gaurav Sood
 #+EXPORT_FILE_NAME: ./curriculum-vitae.pdf
 #+OPTIONS: toc:nil title:nil H:1
 ** Macros
@@ -92,7 +94,7 @@
 
 * CV Column 1 :ignore:
 #+begin_export latex
-\begin{paracol}{2}
+\begin{paracol}{1}
 #+end_export
 ** Personal Statement Secondmind :ignore:noexport:
 #+begin_export latex
@@ -103,8 +105,7 @@
 ** Personal Statement Amazon :ignore:
 #+begin_export latex
  \begin{quote}
-"Senior Data Scientist with total 14 years of experience, and 7 years of experience in Machine Learning, developing open source software in Python, C++, contributing as both individual contributor and team leader, working on Machine Learning, conceptualizing, designing and implementing end to end solutions. Currently working on ideas around Natural Language Processing and Reinforcement Learning to automate Hardware Diagnostics. Have used both traditional machine learning methods like Bayesian Networks, Conditional Random Fields and modern deep learning methods LSTMs, Transformer based models like BERT and GPT, using TensorFlow Recently started using Julia and Flux for Machine Learning.
-"
+"Senior Data Scientist with total 14 years of experience, and 7 years of experience in Machine Learning, developing open source software in Python, C++, contributing as both individual contributor and team leader, working on Machine Learning, conceptualizing, designing and implementing end to end solutions. Currently working on ideas around Natural Language Processing and Reinforcement Learning to automate Hardware Diagnostics. Have used both traditional machine learning methods like Bayesian Networks, Conditional Random Fields and modern deep learning methods LSTMs, Transformer based models like BERT and GPT"
  \end{quote}
 #+end_export
 ** Skills
@@ -121,31 +122,36 @@
 
 {{{divider}}}
 
-{{{cvtag(Deep Learning)}}}
 {{{cvtag(Large Language Models)}}}
 {{{cvtag(Generative AI)}}}
-{{{cvtag(Probabilistic Programming)}}}
+{{{cvtag(Probabilistic Modelling)}}}
 {{{cvtag(Reinforcement Learning)}}}
 {{{cvtag(Open Source Software)}}}
+{{{divider}}}
+
+{{{cvtag(Communication)}}}
+{{{cvtag(Leadership)}}}
 
 ** Experience
 *** Sr Data Scientist                                                :ignore:
 {{{cvevent(Sr. Data Scientist, HP Inc. June 2021 -- Ongoing, Bangalore\, India)}}}
 
-- Designed and Developed Large Language Models Based application for web content filtering/selection.
+- Designed and Developed Large Language Models Based application for web content
+  filtering acheiving a recall of 0.94
+- Implemented evaluation scripts to benchmark LLM application's performance on
+  accuracy, cost(token usage) and inference time comparing GPT4/GPT3.5/GPT-4o-mini/GPT-4o
 - Mentored three data science interns on Hardware logs analysis using Graph
-  Neural Networks and Large Language Models(GPT-2).
-- Fine Tuned Small language Chat model on custom data using 4-bit quantized models.
+  Neural Networks and Large Language Models(GPT-2) achieving precision/recall of 0.85/0.73.
+- Fine Tuned 4-bit quantized Small language Chat model on custom data set using QLORA
+  acheiving an accuracy of 0.96
 - Developed Telemetery data analysis pipline using Large Language Model
-  embeddings, UMAP, Variational AutoEncoder.
-- 
+  embeddings, sentence transformers, UMAP, Variational AutoEncoder and HDBScan
+  
+{{{cvtag(Prompt Engineering)}}}
+{{{cvtag(Language Models)}}}
+{{{cvtag(FineTuning)}}}
 {{{cvtag(Probabilistic modelling)}}}
-{{{cvtag(Gaussian processes)}}}
-{{{cvtag(Variational inference)}}}
-{{{cvtag(Optimal control)}}}
-{{{cvtag(Trajectory optimisation)}}}
-# {{{cvtag(Model-based reinforcement learning)}}}
-
+{{{cvtag(Leadership Skills)}}}
 *** Software Engineer Machine Learning                               :ignore:
 {{{par-div}}}
 {{{cvevent(Software Engineer Machine Learning, HP Inc. June 2017 -- 2021, Bangalore\, India)}}}
@@ -153,18 +159,25 @@
 - Analyzed Sales Time Series Data (Short term/Long term forecasting) using
   Prophet, ARIMA, Gradient Boosting models.
 - Behavior Modelling using Tree Based Models, SHAP, UMAP
-- Proposed methodology which specifies automated hardware diagnostics problem
-   in Reinforcement Learning Framework.
-- Design and implemented software module which models environment for
-  Reinforcement Learning agent to learn using Monte Carlo Methods.  
-- Worked on Conditional Random Fields for Sequence Tagging and Information
-  extraction.
-- 
-{{{cvtag(Communication)}}}
-{{{cvtag(Active listening)}}}
-{{{cvtag(Teaching)}}}
+- Developed simulator environment for online Reinforcement Learning for
+  automated hardware diagnostics.
+- Developed Sequence Tagging Model using LSTMs for discovering insights in
+  call center records acheiving a precision and recall score of 0.91/0.85
+- Mentored 4 interns on sequence tagging using Conditional Random Fields to
+  extract insights from call center records.
+- Presented and communicated ideas around Probabilistic Modelling and
+  Reinforecement Learning to senior leadership
+- Bayesian Networks
 
-*** Senior Software Engineer 
+{{{cvtag(Time Series Analysis)}}}
+{{{cvtag(CART)}}}
+{{{cvtag(Reiforcement Learning)}}}
+{{{cvtag(Probabilistic Graphical Models)}}}
+{{{cvtag(Data Annotation)}}}
+
+{{{new-page}}}
+
+*** Senior Software Engineer :ignore:
 {{{par-div}}}
 {{{cvevent(Senior Software Engineer, HP Inc. June 2015 -- 2017, Bangalore\, India)}}}
 - Designed and Developed a parser for PostScript Language to extract images and
@@ -174,16 +187,26 @@
   software used by over 1 million customers.
 - Worked on understanding PDF specification, design and implemented PDF document
   processing using PDF libraries like iText and PDFium
-- Lead a team of six people which delived Imaging Processing Solutions to over
-  10 PSU banks in india
+- Lead a team of six people which delived Imaging Processing Solutions using
+  Python Imaging Library, TessaractOCT to over 10 PSU banks in india
  
-{{{cvtag(Engineering)}}}
-{{{cvtag(Teamwork)}}}
-{{{cvtag(Industry)}}}
+{{{cvtag(Algorithms)}}}
+{{{cvtag(OpenSource Sofware)}}}
+{{{cvtag(Image Processing)}}}
 
-*** Software Engineer 
+*** Software Engineer :ignore:
 {{{par-div}}}
 {{{cvevent(Software Engineer, HP Inc. June 2010 -- 2015, Bangalore\, India)}}}
+- Designed and Implemented Telemetry module in python using asyncio.
+- Led team of 7 software developers designing and implementing open source
+  software used by over 1 million customers.
+- Collaborated with customers and stakeholders, gathering requirements and
+  communicating constraints.
+- Developed UI, backend, modules in Python for the hp's open source imaging
+  solution (https://developers.hp.com/hp-linux-imaging-and-printing)
+
+{{{cvtag(Python)}}}
+{{{cvtag(Open Source Software)}}}
 
 ** Certifications
    {{{cvevent(Deep Learning Specialization, Coursera Oct-2021 Credential ID G8PG2GY6WFS))}}}
@@ -200,176 +223,6 @@
 \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
 #+end_export
 
-** Projects
-*** Active Learning Secondmind :ignore:noexport:
-
-# {{{cvevent(Investigating Exploration-Exploitation in Multimodal Dynamical Systems (Academic), University of Bristol, May 2021 - Ongoing, Bristol\, UK)}}}
-{{{cvevent(Exploration of Operatable Dynamics Modes in Multimodal Dynamical Systems, University of Bristol, May 2021 - Ongoing, Bristol\, UK)}}}
-
-- Developing data-efficient techniques for exploration in multimodal dynamical systems.
-- The goal of this project is to explore a single dynamics mode that is known to be operatable whilst avoiding other modes.
-  # unoperatable capable of remaining in a single dynamics mode during exploration.
-
-# {{{cvtag(JAX)}}}
-{{{cvtag(Bayesian optimisation)}}}
-{{{cvtag(Gaussian processes)}}}
-{{{cvtag(Optimal control)}}}
-
-*** Active Learning :ignore:
-
-# {{{cvevent(Investigating Exploration-Exploitation in Multimodal Dynamical Systems (Academic), University of Bristol, May 2021 - Ongoing, Bristol\, UK)}}}
-{{{cvevent(Optimal Control in Multimodal Dynamical Systems as Probabilistic Inference, University of Bristol, May 2021 - Ongoing, Bristol\, UK)}}}
-
-- Developing data-efficient techniques for exploration in multimodal dynamical systems.
-- The goal of this project is to explore a single dynamics mode that is known to be operatable whilst avoiding other modes.
-
-{{{cvtag(Variational inference)}}}
-{{{cvtag(Gaussian processes)}}}
-{{{cvtag(Optimal control)}}}
-
-** Newpage :ignore:
-{{{new-page}}}
-
-** Projects (Cont.)
-*** Traj Opt :ignore:
-# {{{divider}}}
-
-{{{cvevent(Trajectory Optimisation in Learned Multimodal Dynamical Systems, University of Bristol, Sept 2019 - March 2021, Bristol\, UK)}}}
-
-- Synergising Bayesian inference and Riemannian geometry to control multimodal dynamical systems.
-   # Learning multimodal probabilistic transition dynamics.
-- Finds trajectories that 1) remain in a desired dynamics mode, 2) avoid regions of the dynamics with high epistemic uncertainty.
-- [[https://github.com/aidanscannell/trajectory-optimisation-in-learned-multimodal-dynamical-systems][\faGithub aidanscannell/trajectory-optimisation-in-learned-multimodal-dynamical-systems]]
-# - [[https://www.aidanscannell.com/publication/trajectory-optimisation-in-learned-multimodal-dynamical-systems-via-latent-ode-collocation/paper.pdf][\faBook published @ ICRA 2021]]
-
-{{{cvtag(JAX)}}}
-{{{cvtag(Probabilistic geometries)}}}
-{{{cvtag(Optimal control)}}}
-
-
-*** SVGP :ignore:
-{{{par-div}}}
-
-{{{cvevent(Identifiable Mixtures of Sparse Variational Gaussian Process Experts, University of Bristol, Sept 2018 - Ongoing, Bristol\, UK)}}}
-
-- Improving identifiability and scalability in the Mixtures of Gaussian Process Experts model with GP-based gating networks.
-- Variational inference based on sparse GP approximations.
--  [[https://github.com/aidanscannell/mogpe][\faGithub aidanscannell/mogpe]]
-
-{{{cvtag(GPflow)}}}
-{{{cvtag(TensorFlow)}}}
-{{{cvtag(Gaussian processes)}}}
-{{{cvtag(Variational inference)}}}
-
-*** GPJax :ignore:noexport:
-{{{divider}}}
-
-{{{cvevent(Gaussian Processes in JAX (Code), Emacs, March 2021 - Ongoing, Bristol\, UK)}}}
-
-- Minimal Gaussian process library in JAX with a simple (custom) approach to state management.
-- \faGithub [[https://github.com/aidanscannell/GPJax][aidanscannell/GPJax]]
-
-{{{cvtag(Gaussian processes)}}}
-{{{cvtag(Variational inference)}}}
-{{{cvtag(JAX)}}}
-{{{cvtag(SVGP)}}}
-
-** A day of my life :noexport:
-# #+begin_export latex
-# % \medskip
-
-# % \cvsection{A Day of My Life}
-
-# % % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-# % % \wheelchart{outer radius}{inner radius}{
-# % % comma-separated list of value/text width/color/detail}
-# % \wheelchart{1.5cm}{0.5cm}{%
-# %   6/8em/accent!30/{Sleep,\\beautiful sleep},
-# %   3/8em/accent!40/Hopeful novelist by night,
-# %   8/8em/accent!60/Daytime job,
-# %   2/10em/accent/Sports and relaxation,
-# %   5/6em/accent!20/Spending time with family
-# % }
-
-# % % use ONLY \newpage if you want to force a page break for
-# % % ONLY the current column
-# % \newpage
-# #+end_export
-
-** Newpage :ignore:noexport:
-{{{new-page}}}
-
-** Volunteering
-*** FARSCOPE Course Rep :ignore:
-{{{cvevent(Cohort Representative, FARSCOPE CDT, Sept 2018 - Ongoing, Bristol\, UK)}}}
-# - I represent myself and fellow CDT students in management meetings where I communicate ideas and information between students and management.
-- Represent myself and my CDT peers in management meetings.
-- Communicate information between students and management.
-
-{{{cvtag(Communication)}}}
-{{{cvtag(Interpersonal Skills)}}}
-
-{{{par-div}}}
-
-*** Code Club :ignore:
-{{{cvevent(Club Leader, Code Club, Dec 2017 - April 2018, Junction 3 Library\, Bristol \, UK)}}}
-
-# - I collaborated with [[https://codeclub.org/en/][Code Club]] and Bristol Libraries to set up and run a Code Club for young people aged 9-13.
-# - Demonstrating my abi involved organising,  planning lessons and teaching
-- Set up (and then ran) a [[https://codeclub.org/en/][Code Club]] for children aged 9-13.
-- Led the organisation, planning and teaching of weekly lessons.
-- Planned lessons to engage children by making coding fun.
-- Extremely rewarding and reinforced my love for teaching.
-# - @ Junction 3 Library in Easton, Bristol.
-
-{{{cvtag(Leadership)}}}
-{{{cvtag(Teaching)}}}
-{{{cvtag(Communication)}}}
-{{{cvtag(Active listening)}}}
-
-*** Drivetrain :ignore:noexport:
-{{{par-div}}}
-
-{{{cvevent(Technical Lead (Drivetrain), Formula Student, Jan 2015 - Jan 2016, Bristol\, UK)}}}
-
-Each year, as part of Formula Student, students design, build and race a single seat race car.
-- Finished 2nd in the National Class 2 competition in 2013/2014, I was then selected as the Drivetrain lead.
-- This role improved my communication skills as I was leading weekly presentations.
-- I developed my leadership skills through setting realistic objectives, effectively allocating work to the appropriate team members and monitoring outcomes.
-
-{{{cvtag(Teamwork)}}}
-{{{cvtag(Leadership)}}}
-{{{cvtag(Time Management)}}}
-
-*** Snowboard Captain :ignore:noexport:
-{{{par-div}}}
-
-{{{cvevent(Snowboard Captain, University of Bristol Snowsports Club, Jan 2014 - Sept 2015, Bristol\, UK)}}}
-
-- Organised multiple weekly training sessions, demonstrating my ability to plan and run events smoothly.
-- Negotiated competitive prices for a growing member base within an inherently expensive sport.
-- Responsible for aiding the smooth running of the club and helping to organise the annual university ski trip, with circa 1500 participants, working under pressure to manage people in high stress situations.
-- Awarded the ‘Team of the Year’ award and full colours for my performances and contributions to the sport.
-
-{{{cvtag(Teamwork)}}}
-{{{cvtag(Leadership)}}}
-{{{cvtag(Time Management)}}}
-
-** Invited Talks
-*** Geometry Talk :ignore:
-{{{cvevent(Synergising Bayesian Inference and Probabilistic Geometries for Robotic Control, Cognitive Systems - Technical University of Denmark (DTU), 18 March 2021, Zoom)}}}
-# - Presented a method for controlling multimodal dynamical systems synergising Bayesian inference and probabilistic geometries.
-- Presented a method synergising Bayesian inference and probabilistic geometries to control multimodal dynamical systems.
-
-{{{cvtag(Communication)}}}
-{{{cvtag(Probabilistic geometries)}}}
-{{{cvtag(Gaussian processes)}}}
-
-* CV Column 2 :ignore:
-# Switch to the right column - will automatically move to the next page.
-#+begin_export latex
-#+end_export
-
 
 ** Education
 {{{cvevent(Msc Research \ Speech Recoginition, Indian Institute of Science Bangalore 2006-2009)}}}
@@ -379,107 +232,6 @@ Each year, as part of Formula Student, students design, build and race a single 
 
 {{{cvevent(BTech Electronics and Communication Engg, GNE Ludhiana 2001-2005)}}}
 
-{{{divider}}}
-
-{{{cvevent(Machine Learning Summer School Moscow (MLSS), Skoltech, Aug 2019 - Sept 2019,)}}}
-
-{{{divider}}}
-
-# {{{cvevent(M.Res.\ in Robotics \& Autonomous Systems, University of Bristol | First Class Honours, Sept 2017 -- Sept 2018,)}}}
-# {{{cvevent(a \footnote{Not official - will be awarded if Ph.D. is not completed.} M.Res.\ in Robotics \& Autonomous Systems,University of Bristol,Sept 2017 -- Sept 2018,)}}}
-#+BEGIN_EXPORT latex
-\cvevent{\footnote{Awarded if PhD is not completed.} MRes in Robotics \& Autonomous Systems}{University of Bristol | First Class Honours}{Sept 2017 -- Sept 2018}{}
-#+END_EXPORT
-# - First Class Honours
-- \faBook [[https://www.aidanscannell.com/project/uncertain-agentspeak/][Extending BDI Agents to Model and Reason with Uncertainty]]
-
-
-{{{divider}}}
-
-{{{cvevent(MEng in Mechanical Engineering, University of Bristol | First Class Honours, Sept 2012 -- June 2016,)}}}
-# - First Class Honours \\
-- Graduated in top 10% of cohort
-
-** Newpage :ignore:
-#+BEGIN_EXPORT latex
-\newpage
-#+END_EXPORT
-
-** My Life Philosophy :noexport:
-#+begin_export latex
-% \begin{quote}
-% ``Something smart or heartfelt, preferably in one sentence.''
-% \end{quote}
-#+end_export
-
-# ** Most Proud Of :ignore:
-# #+begin_export latex
-# \cvsection{Most Proud of}
-# #+end_export
-
-# #+begin_export latex
-# \cvachievement{\faTrophy}{Code Club Leader}{Collaborated with Code Club and Bristol Libraries to set up and run a Code Club for 9-13 year olds.}
-# #+end_export
-
-# #+begin_export latex
-# \divider
-
-# \cvachievement{\faHeartbeat}{British University Snowboard Slalom Champion}{Won all national British university slalom competitions in 2017-2018.}
-# #+end_export
-
-** Achievements 
-{{{cvachievement(\faTrophy, Full Sporting Colours, Awarded full colours for outstanding achievements in snowboarding. Multiple gold medals in British University Snowboard Championships.)}}}
-
-{{{divider}}}
-
-{{{cvachievement(\faCertificate, Starting To Teach, Established myself as a confident\, enthusiastic and effective teacher who is able to engage\, encourage and develop students' learning.)}}}
-
-{{{divider}}}
-
-{{{cvachievement(\faTrophy,Bristol Plus Award, For undertaking a wide range of tasks to further enhance student skills - only 700 out of 23\,000 achieved this award per annum.)}}}
-
-{{{divider}}}
-
-{{{cvachievement(\faCertificate, Mary Jones Prize for Mathematics, For outstanding achievements in A Level mathematics @ Ripon Grammar School)}}}
-
-{{{divider}}}
-
-{{{cvachievement(\faTrophy, The Duke of Edinburgh's Award, Bronze/Silver/Gold)}}}
-
-** Languages :noexport:
-#+begin_export latex
-% \cvsection{Languages}
-
-% \cvskill{English}{5}
-% \divider
-
-% \cvskill{Spanish}{4}
-% \divider
-
-% \cvskill{German}{3}
-
-% %% Yeah I didn't spend too much time making all the
-% %% spacing consistent... sorry. Use \smallskip, \medskip,
-% %% \bigskip, \vpsace etc to make ajustments.
-% \medskip
-#+end_export
-
-\newpage
-** References
-#+begin_export latex
-% \cvref{name}{email}{mailing address}
-\cvref{Prof.\ Arthur Richards}{University of Bristol}{arthur.richards@bristol.ac.uk}
-% {Address Line 1\\Address line 2}
-\divider
-\cvref{Dr.\ Carl Henrik Ek}{University of Cambridge}{che29@cam.ac.uk}
-% {Address Line 1\\Address line 2}
-#+end_export
-
-* Back Matter :ignore:
-#+begin_export latex
 \end{paracol}
 \end{document}
-#+end_export
-
-
 

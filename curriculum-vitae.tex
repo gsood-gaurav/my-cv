@@ -1,4 +1,4 @@
-% Created 2024-10-02 Wed 21:08
+% Created 2024-10-05 Sat 20:27
 % Intended LaTeX compiler: pdflatex
 \documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
 
@@ -37,7 +37,6 @@
 \usepackage[rm]{roboto}
 \usepackage[defaultsans]{lato}
 \usepackage{paracol}
-\columnratio{1.075} % Set the left/right column width ratio to 6:4.
 \usepackage[bottom]{footmisc}
 \DeclareNameAlias{sortname}{given-family}
 \addbibresource{aidan.bib}
@@ -67,13 +66,12 @@
 }
 \makecvheader
 
-\begin{paracol}{2}
+\begin{paracol}{1}
  \begin{quote}
-"Senior Data Scientist with total 14 years of experience, and 7 years of experience in Machine Learning, developing open source software in Python, C++, contributing as both individual contributor and team leader, working on Machine Learning, conceptualizing, designing and implementing end to end solutions. Currently working on ideas around Natural Language Processing and Reinforcement Learning to automate Hardware Diagnostics. Have used both traditional machine learning methods like Bayesian Networks, Conditional Random Fields and modern deep learning methods LSTMs, Transformer based models like BERT and GPT, using TensorFlow Recently started using Julia and Flux for Machine Learning.
-"
+"Senior Data Scientist with total 14 years of experience, and 7 years of experience in Machine Learning, developing open source software in Python, C++, contributing as both individual contributor and team leader, working on Machine Learning, conceptualizing, designing and implementing end to end solutions. Currently working on ideas around Natural Language Processing and Reinforcement Learning to automate Hardware Diagnostics. Have used both traditional machine learning methods like Bayesian Networks, Conditional Random Fields and modern deep learning methods LSTMs, Transformer based models like BERT and GPT"
  \end{quote}
 \cvsection{Skills}
-\label{sec:org980d01b}
+\label{sec:orga9d92b8}
 \cvtag{Python}
 \cvtag{PyTorch}
 \cvtag{TensorFlow}
@@ -87,32 +85,38 @@
 
 \divider
 
-\cvtag{Deep Learning}
 \cvtag{Large Language Models}
 \cvtag{Generative AI}
-\cvtag{Probabilistic Programming}
+\cvtag{Probabilistic Modelling}
 \cvtag{Reinforcement Learning}
 \cvtag{Open Source Software}
+\divider
+
+\cvtag{Communication}
+\cvtag{Leadership}
 
 \cvsection{Experience}
-\label{sec:orge98f48b}
+\label{sec:org7c796df}
 \cvevent{Sr. Data Scientist}{ HP Inc. June 2021 -- Ongoing}{ Bangalore, India}{}
 
 \begin{itemize}
-\item Designed and Developed Large Language Models Based application for web content filtering/selection.
+\item Designed and Developed Large Language Models Based application for web content
+filtering acheiving a recall of 0.94
+\item Implemented evaluation scripts to benchmark LLM application's performance on
+accuracy, cost(token usage) and inference time comparing GPT4/GPT3.5/GPT-4o-mini/GPT-4o
 \item Mentored three data science interns on Hardware logs analysis using Graph
-Neural Networks and Large Language Models.
-\item Fine Tuned Small language Chat model on custom data using 4-bit quantized models.
+Neural Networks and Large Language Models(GPT-2) achieving precision/recall of 0.85/0.73.
+\item Fine Tuned 4-bit quantized Small language Chat model on custom data set using QLORA
+acheiving an accuracy of 0.96
 \item Developed Telemetery data analysis pipline using Large Language Model
-embeddings, UMAP, Variational AutoEncoder.
-\item 
+embeddings, sentence transformers, UMAP, Variational AutoEncoder and HDBScan
 \end{itemize}
-\cvtag{Probabilistic modelling}
-\cvtag{Gaussian processes}
-\cvtag{Variational inference}
-\cvtag{Optimal control}
-\cvtag{Trajectory optimisation}
 
+\cvtag{Prompt Engineering}
+\cvtag{Language Models}
+\cvtag{FineTuning}
+\cvtag{Probabilistic modelling}
+\cvtag{Leadership Skills}
 \par\divider
 \cvevent{Software Engineer Machine Learning}{ HP Inc. June 2017 -- 2021}{ Bangalore, India}{}
 
@@ -120,21 +124,24 @@ embeddings, UMAP, Variational AutoEncoder.
 \item Analyzed Sales Time Series Data (Short term/Long term forecasting) using
 Prophet, ARIMA, Gradient Boosting models.
 \item Behavior Modelling using Tree Based Models, SHAP, UMAP
-\item Proposed methodology which specifies automated hardware diagnostics problem
-in Reinforcement Learning Framework.
-\item Design and implemented software module which models environment for
-Reinforcement Learning agent to learn using Monte Carlo Methods.
-\item Worked on Conditional Random Fields for Sequence Tagging and Information
-extraction.
-\item 
+\item Developed simulator environment for online Reinforcement Learning for
+automated hardware diagnostics.
+\item Developed Sequence Tagging Model using LSTMs for discovering insights in
+call center records acheiving a precision and recall score of 0.91/0.85
+\item Mentored 4 interns on sequence tagging using Conditional Random Fields to
+extract insights from call center records.
+\item Presented and communicated ideas around Probabilistic Modelling and
+Reinforecement Learning to senior leadership
+\item Bayesian Networks
 \end{itemize}
-\cvtag{Communication}
-\cvtag{Active listening}
-\cvtag{Teaching}
 
-\begin{enumerate}
-\item Senior Software Engineer
-\label{sec:org5019653}
+\cvtag{Time Series Analysis}
+\cvtag{CART}
+\cvtag{Reiforcement Learning}
+\cvtag{Probabilistic Graphical Models}
+\cvtag{Data Annotation}
+
+\newpage
 \par\divider
 \cvevent{Senior Software Engineer}{ HP Inc. June 2015 -- 2017}{ Bangalore, India}{}
 \begin{itemize}
@@ -145,22 +152,30 @@ meta data which was impacting 50000 hp customers and saving 5 million dollars.
 software used by over 1 million customers.
 \item Worked on understanding PDF specification, design and implemented PDF document
 processing using PDF libraries like iText and PDFium
-\item Lead a team of six people which delived Imaging Processing Solutions to over
-10 PSU banks in india
+\item Lead a team of six people which delived Imaging Processing Solutions using
+Python Imaging Library, TessaractOCT to over 10 PSU banks in india
 \end{itemize}
 
-\cvtag{Engineering}
-\cvtag{Teamwork}
-\cvtag{Industry}
-
-\item Software Engineer
-\label{sec:org92e244d}
+\cvtag{Algorithms}
+\cvtag{OpenSource Sofware}
+\cvtag{Image Processing}
 \par\divider
 \cvevent{Software Engineer}{ HP Inc. June 2010 -- 2015}{ Bangalore, India}{}
-\end{enumerate}
+\begin{itemize}
+\item Designed and Implemented Telemetry module in python using asyncio.
+\item Led team of 7 software developers designing and implementing open source
+software used by over 1 million customers.
+\item Collaborated with customers and stakeholders, gathering requirements and
+communicating constraints.
+\item Developed UI, backend, modules in Python for the hp's open source imaging
+solution (\url{https://developers.hp.com/hp-linux-imaging-and-printing})
+\end{itemize}
+
+\cvtag{Python}
+\cvtag{Open Source Software}
 
 \cvsection{Certifications}
-\label{sec:orgec06d61}
+\label{sec:org359bcc5}
 \cvevent{Deep Learning Specialization}{ Coursera Oct-2021 Credential ID G8PG2GY6WFS)}{}{}
 \cvevent{Reinforcement Learning Specialization}{ Coursera Sept-2021 Credential IDD3LDNU8BRW68}{}{}
 \cvevent{Introduction to Quantum Computing}{ Coursera May-2021 Credential ID RXQHLEC2WYC8}{}{}
@@ -171,91 +186,9 @@ processing using PDF libraries like iText and PDFium
 % \divider
 \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
 
-\cvsection{Projects}
-\label{sec:org8999906}
-\cvevent{Optimal Control in Multimodal Dynamical Systems as Probabilistic Inference}{ University of Bristol}{ May 2021 - Ongoing}{ Bristol, UK}
-
-\begin{itemize}
-\item Developing data-efficient techniques for exploration in multimodal dynamical systems.
-\item The goal of this project is to explore a single dynamics mode that is known to be operatable whilst avoiding other modes.
-\end{itemize}
-
-\cvtag{Variational inference}
-\cvtag{Gaussian processes}
-\cvtag{Optimal control}
-
-\newpage
-
-\cvsection{Projects (Cont.)}
-\label{sec:org8a43f82}
-\cvevent{Trajectory Optimisation in Learned Multimodal Dynamical Systems}{ University of Bristol}{ Sept 2019 - March 2021}{ Bristol, UK}
-
-\begin{itemize}
-\item Synergising Bayesian inference and Riemannian geometry to control multimodal dynamical systems.
-\item Finds trajectories that 1) remain in a desired dynamics mode, 2) avoid regions of the dynamics with high epistemic uncertainty.
-\item \href{https://github.com/aidanscannell/trajectory-optimisation-in-learned-multimodal-dynamical-systems}{\faGithub aidanscannell/trajectory-optimisation-in-learned-multimodal-dynamical-systems}
-\end{itemize}
-
-\cvtag{JAX}
-\cvtag{Probabilistic geometries}
-\cvtag{Optimal control}
-\par\divider
-
-\cvevent{Identifiable Mixtures of Sparse Variational Gaussian Process Experts}{ University of Bristol}{ Sept 2018 - Ongoing}{ Bristol, UK}
-
-\begin{itemize}
-\item Improving identifiability and scalability in the Mixtures of Gaussian Process Experts model with GP-based gating networks.
-\item Variational inference based on sparse GP approximations.
-\item \href{https://github.com/aidanscannell/mogpe}{\faGithub aidanscannell/mogpe}
-\end{itemize}
-
-\cvtag{GPflow}
-\cvtag{TensorFlow}
-\cvtag{Gaussian processes}
-\cvtag{Variational inference}
-
-\cvsection{Volunteering}
-\label{sec:orgee03d65}
-\cvevent{Cohort Representative}{ FARSCOPE CDT}{ Sept 2018 - Ongoing}{ Bristol, UK}
-
-\begin{itemize}
-\item Represent myself and my CDT peers in management meetings.
-\item Communicate information between students and management.
-\end{itemize}
-
-\cvtag{Communication}
-\cvtag{Interpersonal Skills}
-
-\par\divider
-\cvevent{Club Leader}{ Code Club}{ Dec 2017 - April 2018}{ Junction 3 Library, Bristol , UK}
-
-\begin{itemize}
-\item Set up (and then ran) a \href{https://codeclub.org/en/}{Code Club} for children aged 9-13.
-\item Led the organisation, planning and teaching of weekly lessons.
-\item Planned lessons to engage children by making coding fun.
-\item Extremely rewarding and reinforced my love for teaching.
-\end{itemize}
-
-\cvtag{Leadership}
-\cvtag{Teaching}
-\cvtag{Communication}
-\cvtag{Active listening}
-
-\cvsection{Invited Talks}
-\label{sec:orgb9bfa3f}
-\cvevent{Synergising Bayesian Inference and Probabilistic Geometries for Robotic Control}{ Cognitive Systems - Technical University of Denmark (DTU)}{ 18 March 2021}{ Zoom}
-
-\begin{itemize}
-\item Presented a method synergising Bayesian inference and probabilistic geometries to control multimodal dynamical systems.
-\end{itemize}
-
-\cvtag{Communication}
-\cvtag{Probabilistic geometries}
-\cvtag{Gaussian processes}
-
 
 \cvsection{Education}
-\label{sec:org872d601}
+\label{sec:org6f64dd1}
 \cvevent{Msc Research \ Speech Recoginition}{ Indian Institute of Science Bangalore 2006-2009}{}{}
 \begin{itemize}
 \item \faBook Speech Recognition using Support Vector Machines
@@ -265,57 +198,6 @@ processing using PDF libraries like iText and PDFium
 
 \cvevent{BTech Electronics and Communication Engg}{ GNE Ludhiana 2001-2005}{}{}
 
-\divider
-
-\cvevent{Machine Learning Summer School Moscow (MLSS)}{ Skoltech}{ Aug 2019 - Sept 2019}{}
-
-\divider
-
-\cvevent{\footnote{Awarded if PhD is not completed.} MRes in Robotics \& Autonomous Systems}{University of Bristol | First Class Honours}{Sept 2017 -- Sept 2018}{}
-
-\begin{itemize}
-\item \faBook \href{https://www.aidanscannell.com/project/uncertain-agentspeak/}{Extending BDI Agents to Model and Reason with Uncertainty}
-\end{itemize}
-
-
-\divider
-
-\cvevent{MEng in Mechanical Engineering}{ University of Bristol | First Class Honours}{ Sept 2012 -- June 2016}{}
-
-\begin{itemize}
-\item Graduated in top 10\% of cohort
-\end{itemize}
-
-\newpage
-
-\cvsection{Achievements}
-\label{sec:orgf001db1}
-\cvachievement{\faTrophy}{ Full Sporting Colours}{ Awarded full colours for outstanding achievements in snowboarding. Multiple gold medals in British University Snowboard Championships.}{}
-
-\divider
-
-\cvachievement{\faCertificate}{ Starting To Teach}{ Established myself as a confident, enthusiastic and effective teacher who is able to engage, encourage and develop students' learning.}{}
-
-\divider
-
-\cvachievement{\faTrophy}{Bristol Plus Award}{ For undertaking a wide range of tasks to further enhance student skills - only 700 out of 23,000 achieved this award per annum.}{}
-
-\divider
-
-\cvachievement{\faCertificate}{ Mary Jones Prize for Mathematics}{ For outstanding achievements in A Level mathematics @ Ripon Grammar School}{}
-
-\divider
-
-\cvachievement{\faTrophy}{ The Duke of Edinburgh's Award}{ Bronze/Silver/Gold}{}
-
-\cvsection{References}
-\label{sec:org1c639c7}
-% \cvref{name}{email}{mailing address}
-\cvref{Prof.\ Arthur Richards}{University of Bristol}{arthur.richards@bristol.ac.uk}
-% {Address Line 1\\Address line 2}
-\divider
-\cvref{Dr.\ Carl Henrik Ek}{University of Cambridge}{che29@cam.ac.uk}
-% {Address Line 1\\Address line 2}
 \end{paracol}
 \end{document}
 \end{document}
