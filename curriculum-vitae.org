@@ -105,7 +105,7 @@
 ** Personal Statement Amazon :ignore:
 #+begin_export latex
  \begin{quote}
-"Senior Data Scientist with total 14 years of experience, and 7 years of experience in Machine Learning, developing open source software in Python, C++, contributing as both individual contributor and team leader, working on Machine Learning, conceptualizing, designing and implementing end to end solutions. Currently working on ideas around Natural Language Processing and Reinforcement Learning to automate Hardware Diagnostics. Have used both traditional machine learning methods like Bayesian Networks, Conditional Random Fields and modern deep learning methods LSTMs, Transformer based models like BERT and GPT"
+"Senior Data Scientist with total 14 years of experience, and 7 years of experience in Machine Learning, developing open source software in Python, C++, contributing as both individual contributor and team leader, working on Machine Learning, conceptualizing, designing and implementing end to end solutions. Currently working on  Natural Language Processing and Reinforcement Learning. Have used both traditional machine learning methods like Bayesian Networks, Conditional Random Fields and modern deep learning methods LSTMs, Transformer based models like BERT and GPT"
  \end{quote}
 #+end_export
 ** Skills
@@ -130,7 +130,7 @@
 {{{divider}}}
 
 {{{cvtag(Communication)}}}
-{{{cvtag(Leadership)}}}
+{{{cvtag(Leadership Skills)}}}
 
 ** Experience
 *** Sr Data Scientist                                                :ignore:
@@ -148,10 +148,12 @@
   embeddings, sentence transformers, UMAP, Variational AutoEncoder and HDBScan
   
 {{{cvtag(Prompt Engineering)}}}
-{{{cvtag(Language Models)}}}
+{{{cvtag(GPT2)}}}
 {{{cvtag(FineTuning)}}}
-{{{cvtag(Probabilistic modelling)}}}
+{{{cvtag(Probabilistic Modelling)}}}
 {{{cvtag(Leadership Skills)}}}
+{{{cvtag(Graph Nerual Networks)}}}
+{{{cvtag(Embedding Models)}}}
 *** Software Engineer Machine Learning                               :ignore:
 {{{par-div}}}
 {{{cvevent(Software Engineer Machine Learning, HP Inc. June 2017 -- 2021, Bangalore\, India)}}}
@@ -167,11 +169,12 @@
   extract insights from call center records.
 - Presented and communicated ideas around Probabilistic Modelling and
   Reinforecement Learning to senior leadership
-- Bayesian Networks
+- Analyzed Call center record using Bayesian Networks for predictive diagnostics
+  as an aid to call center executives.
 
 {{{cvtag(Time Series Analysis)}}}
 {{{cvtag(CART)}}}
-{{{cvtag(Reiforcement Learning)}}}
+{{{cvtag(Reinforcement Learning)}}}
 {{{cvtag(Probabilistic Graphical Models)}}}
 {{{cvtag(Data Annotation)}}}
 
@@ -193,6 +196,7 @@
 {{{cvtag(Algorithms)}}}
 {{{cvtag(OpenSource Sofware)}}}
 {{{cvtag(Image Processing)}}}
+{{{cvtag(Leadership Skills)}}}
 
 *** Software Engineer :ignore:
 {{{par-div}}}
@@ -207,6 +211,7 @@
 
 {{{cvtag(Python)}}}
 {{{cvtag(Open Source Software)}}}
+{{{cvtag(Asynchronous Programming)}}}
 
 ** Certifications
    {{{cvevent(Deep Learning Specialization, Coursera Oct-2021 Credential ID G8PG2GY6WFS))}}}
@@ -223,6 +228,15 @@
 \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
 #+end_export
 
+** Preventive Disclosures
+   * Gaurav Sood, Ranjith Kumar Gopa, Nandan Kumar Nidhi(May 2024) "Representing
+     Tabular Data using Large Lanugage Models"
+     https://www.tdcommons.org/dpubs_series/6998/ 
+   * Gaurav Sood (Feb 2021) "A Reinforcement Learning Approach to Printer Diagnostics"
+     https://www.tdcommons.org/dpubs_series/4244/
+   * Gaurav	Sood, Pavleen Kaur Brar, Raghu Anantharangachar (April 2019)
+     "Sequence Prediction for Print/Scan Issues using Bayesian Networks"
+     https://www.tdcommons.org/dpubs_series/2117/
 
 ** Education
 {{{cvevent(Msc Research \ Speech Recoginition, Indian Institute of Science Bangalore 2006-2009)}}}
