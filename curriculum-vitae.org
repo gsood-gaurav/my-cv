@@ -141,8 +141,10 @@
 - Implemented evaluation scripts to benchmark LLM application's performance on
   accuracy, cost(token usage) and inference time comparing GPT4/GPT3.5/GPT-4o-mini/GPT-4o
 - Mentored three data science interns on Hardware logs analysis using Graph
-  Neural Networks and Large Language Models(GPT-2) achieving precision/recall of 0.85/0.73.
-- Fine Tuned 4-bit quantized Small language Chat model on custom data set using QLORA
+  Neural Networks and Large Language Models(GPT-2) achieving precision/recall of
+  0.85/0.73 capturing structural, sequetial, semantic relationship among
+  different components generating logs
+- Fine Tuned 4-bit quantized Small language Chat model TinyLLama(1B parameters) on custom data set using QLORA
   acheiving an accuracy of 0.96
 - Developed Telemetery data analysis pipline using Large Language Model
   embeddings, sentence transformers, UMAP, Variational AutoEncoder and HDBScan
