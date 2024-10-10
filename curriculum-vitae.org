@@ -159,7 +159,9 @@
 {{{cvevent(Software Engineer Machine Learning, HP Inc. June 2017 -- 2021, Bangalore\, India)}}}
 
 - Analyzed Sales Time Series Data (Short term/Long term forecasting) using
-  Prophet, ARIMA, Gradient Boosting models.
+  Prophet, ARIMA, Gradient Boosting models, studying the effects of Consumer
+  Price Index, WholeSale Price Index, Industrial Production Growth and
+  employment, hyperparamter tuning using Optuna, producing a MAPE score of 6-8%.
 - Worked on HP Personal Systems User Behavior Modelling using Tree Based Models,
   SHAP, UMAP, HDBScan for targeted market campaigning.
 - Developed simulator environment for online Reinforcement Learning for
@@ -168,7 +170,7 @@
   call center records acheiving a precision and recall score of 0.91/0.85
 - Mentored 4 interns on sequence tagging using Conditional Random Fields to
   extract insights from call center records.
-- Presented and communicated ideas around Probabilistic Modelling and
+- Presented and communicated ideas about Probabilistic Modelling and
   Reinforecement Learning to senior leadership
 - Analyzed Call center record using Bayesian Networks for predictive diagnostics
   as an aid to call center executives.
