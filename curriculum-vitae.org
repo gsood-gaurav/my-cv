@@ -105,7 +105,7 @@
 ** Personal Statement Amazon :ignore:
 #+begin_export latex
  \begin{quote}
-"Senior Data Scientist with 7 years of experience in Data Science and total experience of 14 years in software industry, contributing as and individual contributor and team leader, building machine learning models from conception to completion. Worked on  Natural Language Processing, Time Series Forecasting, Tabular Datasets, Graph Neural Nets and  Reinforcement Learning.  Have experience in traditional machine learning methods (Probabilistic Graphical Models), deep learning models (LSTMs, CNNs) and Transformer based models (BERT, GPT and LLMs)"
+"Senior Data Scientist with 7 years of experience in Data Science and total experience of 14 years in software industry, contributing as and individual contributor and team leader, building machine learning models from conception to completion to improve operational efficiency. Worked on  Natural Language Processing, Time Series Forecasting, Tabular Datasets, Graph Neural Nets and  Reinforcement Learning.  Have experience in traditional machine learning methods (Probabilistic Graphical Models), deep learning models (LSTMs, CNNs) and Transformer based models (BERT, GPT and LLMs)"
  \end{quote}
 #+end_export
 ** Skills
@@ -134,28 +134,30 @@
 
 ** Experience
 *** Sr Data Scientist                                                :ignore:
-{{{cvevent(Sr. Data Scientist, HP Inc. June 2021 -- Ongoing, Bangalore\, India)}}}
+{{{cvevent(Sr. Data Scientist, HP Inc. May 2021 -- Ongoing, Bangalore\, India)}}}
 
 - Designed and Developed Large Language Models(LLMs) Based application for web content
   filtering and topic recommendation (Currently in beta phase.)
 - Implemented evaluation scripts to benchmark LLM based application's performance on
-  accuracy, cost(token usage) and inference reducing cost by 30%.
+  accuracy, cost(token usage) and inference time reducing cost by 30%.
 - Mentored 3 data science interns on automating triaging with machine learning
-  on hardware logs using Graph Neural Networks and GPT2
+  on hardware logs using Graph Neural Networks and Generative Pretrained Transformer(GPT2)
 - Fine Tuned 4-bit quantized Small language Chat model TinyLLama(1B parameters) on custom data set using QLORA.
 - Developed Telemetery data analysis pipline processing 0.5 milllion customer record using Large Language Model
-  embeddings, BERT, UMAP, Variational AutoEncoder and HDBScan enhancing operational efficiency by 20%.
+  embeddings, BERT, dimensionality reduction(UMAP, Variational AutoEncoder) and
+  clustering HDBScan enhancing operational efficiency by 20%.
   
 {{{cvtag(Prompt Engineering)}}}
 {{{cvtag(GPT2)}}}
-{{{cvtag(FineTuning)}}}
-{{{cvtag(Probabilistic Modelling)}}}
+{{{cvtag(Llama)}}}
+{{{Cvtag(FineTuning)}}}
 {{{cvtag(Leadership Skills)}}}
-{{{cvtag(Graph Nerual Networks)}}}
 {{{cvtag(Embedding Models)}}}
+{{{cvtag(Graph Nerual Networks)}}}
+
 *** Sr. Software Engineer Machine Learning                           :ignore:
 {{{par-div}}}
-{{{cvevent(Sr. Software Engineer Machine Learning, HP Inc. June 2017 -- 2021, Bangalore\, India)}}}
+{{{cvevent(Sr. Software Engineer Machine Learning, HP Inc. July 2017 -- May 2021, Bangalore\, India)}}}
 
 - Analyzed Sales Time Series Data (Short term/Long term demand forecasting to
   improve supply chain processes) using statistical models, Tree based models
@@ -168,8 +170,8 @@
   SHAP, UMAP, HDBScan for targeted market campaigning.
 - Developed simulator environment for online Reinforcement Learning for
   automated hardware diagnostics.
-- Developed Sequence Tagging Model using LSTMs for discovering insights in
-  call center records
+- Developed Sequence Tagging Model using BERT, LSTMs for discovering insights in
+  call center records which lead to 30% increase in operational efficency.
 - Mentored 4 interns on sequence tagging using Conditional Random Fields to
   extract insights from call center records.
 - Presented and communicated ideas about Probabilistic Modelling and
@@ -183,11 +185,11 @@
 {{{cvtag(Probabilistic Graphical Models)}}}
 {{{cvtag(Data Annotation)}}}
 
-{{{new-page}}}
+# {{{new-page}}}
 
 *** Software Engineer :ignore:
 {{{par-div}}}
-{{{cvevent(Senior Software Engineer, HP Inc. June 2015 -- 2017, Bangalore\, India)}}}
+{{{cvevent(Senior Software Engineer, HP Inc. March 2015 -- June 2017, Bangalore\, India)}}}
 - Designed and Developed a parser for PostScript Language to extract images and
   meta data which was impacting 50000 hp customers and saving 0.5 million dollars.
 - Worked on understanding PDF specification, design and implemented PDF document
@@ -202,7 +204,7 @@
 
 *** Software Engineer :ignore:
 {{{par-div}}}
-{{{cvevent(Software Engineer, HP Inc. June 2010 -- 2015, Bangalore\, India)}}}
+{{{cvevent(Software Engineer, HP Inc. May 2010 -- Feb 2015, Bangalore\, India)}}}
 - Designed and Implemented Telemetry module in python using asyncio.
 - Led team of 7 software developers designing and implementing open source
   software used by over 1 million customers.
