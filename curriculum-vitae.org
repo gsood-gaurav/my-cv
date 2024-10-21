@@ -105,7 +105,7 @@
 ** Personal Statement Amazon :ignore:
 #+begin_export latex
  \begin{quote}
-"Senior Data Scientist with total 14 years of experience, and 7 years of experience in Machine Learning, developing open source software in Python, C++, contributing as both individual contributor and team leader, working on Machine Learning, conceptualizing, designing and implementing end to end solutions. Currently working on  Natural Language Processing and Reinforcement Learning. Have used both traditional machine learning methods like Bayesian Networks, Conditional Random Fields and modern deep learning methods LSTMs, Transformer based models like BERT and GPT"
+"Senior Data Scientist with 7 years of experience in Data Science and total experience of 14 years in software industry, contributing as and individual contributor and team leader, building machine learning models from conception to completion. Worked on  Natural Language Processing, Time Series Forecasting, Tabular Datasets, Graph Neural Nets and  Reinforcement Learning.  Have experience in traditional machine learning methods (Probabilistic Graphical Models), deep learning models (LSTMs, CNNs) and Transformer based models (BERT, GPT and LLMs)"
  \end{quote}
 #+end_export
 ** Skills
@@ -114,7 +114,7 @@
 {{{cvtag(TensorFlow)}}}
 {{{cvtag(JAX)}}}
 {{{cvtag(Julia)}}}
-{{{cvtag(Flux)}}}
+{{{cvtag(Flux/Lux)}}}
 {{{cvtag(NumPy)}}}
 {{{cvtag(SciPy)}}}
 {{{cvtag(Matplotlib)}}}
@@ -136,18 +136,15 @@
 *** Sr Data Scientist                                                :ignore:
 {{{cvevent(Sr. Data Scientist, HP Inc. June 2021 -- Ongoing, Bangalore\, India)}}}
 
-- Designed and Developed Large Language Models Based application for web content
-  filtering acheiving a recall of 0.94
-- Implemented evaluation scripts to benchmark LLM application's performance on
-  accuracy, cost(token usage) and inference time comparing GPT4/GPT3.5/GPT-4o-mini/GPT-4o
-- Mentored three data science interns on Hardware logs analysis using Graph
-  Neural Networks and Large Language Models(GPT-2) achieving precision/recall of
-  0.85/0.73 capturing structural, sequetial, semantic relationship among
-  different components generating logs
-- Fine Tuned 4-bit quantized Small language Chat model TinyLLama(1B parameters) on custom data set using QLORA
-  acheiving an accuracy of 0.96
-- Developed Telemetery data analysis pipline using Large Language Model
-  embeddings, sentence transformers, UMAP, Variational AutoEncoder and HDBScan
+- Designed and Developed Large Language Models(LLMs) Based application for web content
+  filtering and topic recommendation (Currently in beta phase.)
+- Implemented evaluation scripts to benchmark LLM based application's performance on
+  accuracy, cost(token usage) and inference reducing cost by 30%.
+- Mentored 3 data science interns on automating triaging with machine learning
+  on hardware logs using Graph Neural Networks and GPT2
+- Fine Tuned 4-bit quantized Small language Chat model TinyLLama(1B parameters) on custom data set using QLORA.
+- Developed Telemetery data analysis pipline processing 0.5 milllion customer record using Large Language Model
+  embeddings, BERT, UMAP, Variational AutoEncoder and HDBScan enhancing operational efficiency by 20%.
   
 {{{cvtag(Prompt Engineering)}}}
 {{{cvtag(GPT2)}}}
@@ -156,21 +153,23 @@
 {{{cvtag(Leadership Skills)}}}
 {{{cvtag(Graph Nerual Networks)}}}
 {{{cvtag(Embedding Models)}}}
-*** Software Engineer Machine Learning                               :ignore:
+*** Sr. Software Engineer Machine Learning                           :ignore:
 {{{par-div}}}
-{{{cvevent(Software Engineer Machine Learning, HP Inc. June 2017 -- 2021, Bangalore\, India)}}}
+{{{cvevent(Sr. Software Engineer Machine Learning, HP Inc. June 2017 -- 2021, Bangalore\, India)}}}
 
 - Analyzed Sales Time Series Data (Short term/Long term demand forecasting to
-  improve supply chain processes) using Prophet, ARIMA, Gradient Boosting
-  models, studying the effects of Consumer Price Index, WholeSale Price Index,
-  Industrial Production Growth and employment, hyperparamter tuning using
-  Optuna, producing a MAPE score of 6-8%. 
+  improve supply chain processes) using statistical models, Tree based models
+  and Generalized Additive Models.
+- Analyzed the effects of macro economic indicators on Demand Forecasts to
+  optimize inventory management.
+- Implemented Hyperparameter Tuning module for Time Series models using Optuna
+  reducing the model execution time by 25%.
 - Worked on HP Personal Systems User Behavior Modelling using Tree Based Models,
   SHAP, UMAP, HDBScan for targeted market campaigning.
 - Developed simulator environment for online Reinforcement Learning for
   automated hardware diagnostics.
 - Developed Sequence Tagging Model using LSTMs for discovering insights in
-  call center records acheiving a precision and recall score of 0.91/0.85
+  call center records
 - Mentored 4 interns on sequence tagging using Conditional Random Fields to
   extract insights from call center records.
 - Presented and communicated ideas about Probabilistic Modelling and
@@ -186,18 +185,15 @@
 
 {{{new-page}}}
 
-*** Senior Software Engineer :ignore:
+*** Software Engineer :ignore:
 {{{par-div}}}
 {{{cvevent(Senior Software Engineer, HP Inc. June 2015 -- 2017, Bangalore\, India)}}}
 - Designed and Developed a parser for PostScript Language to extract images and
-  meta data which was impacting 50000 hp customers and saving 5 million dollars.
-- Designed and developed Telemetery module in python.
-- Led team of 7 software developers designing and implementing open source
-  software used by over 1 million customers.
+  meta data which was impacting 50000 hp customers and saving 0.5 million dollars.
 - Worked on understanding PDF specification, design and implemented PDF document
   processing using PDF libraries like iText and PDFium
-- Lead a team of six people which delived Imaging Processing Solutions using
-  Python Imaging Library, TessaractOCT to over 10 PSU banks in india
+- Lead a team of 4 software engineers which delivered imaging processing solutions using
+  Python Imaging Library, Tessaract OCR to over 10 PSU banks in india
  
 {{{cvtag(Algorithms)}}}
 {{{cvtag(OpenSource Sofware)}}}
@@ -218,6 +214,7 @@
 {{{cvtag(Python)}}}
 {{{cvtag(Open Source Software)}}}
 {{{cvtag(Asynchronous Programming)}}}
+{{{cvtag(Leadership Skills)}}}
 
 ** Certifications
    {{{cvevent(Deep Learning Specialization, Coursera Oct-2021 Credential ID G8PG2GY6WFS))}}}
