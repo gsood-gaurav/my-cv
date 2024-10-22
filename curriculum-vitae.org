@@ -142,16 +142,16 @@
   accuracy, cost(token usage) and inference time reducing cost by 30%.
 - Mentored 3 data science interns on automating triaging with machine learning
   on hardware logs using Graph Neural Networks and Generative Pretrained Transformer(GPT2)
-- Fine Tuned 4-bit quantized Small language Chat model TinyLLama(1B parameters) on custom data set using QLORA.
+- Led the Small Language Models(SLMs) exploration and finetuning initatives
+  using PEFT techniques as an alternative to Large Language Models.
 - Developed Telemetery data analysis pipline processing 0.5 milllion customer record using Large Language Model
   embeddings, BERT, dimensionality reduction(UMAP, Variational AutoEncoder) and
   clustering HDBScan enhancing operational efficiency by 20%.
   
 {{{cvtag(Prompt Engineering)}}}
 {{{cvtag(GPT2)}}}
-{{{cvtag(Llama)}}}
+{{{cvtag(TinyLlama)}}}
 {{{Cvtag(FineTuning)}}}
-{{{cvtag(Leadership Skills)}}}
 {{{cvtag(Embedding Models)}}}
 {{{cvtag(Graph Nerual Networks)}}}
 
