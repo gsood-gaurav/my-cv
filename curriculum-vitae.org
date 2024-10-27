@@ -105,7 +105,7 @@
 ** Personal Statement Amazon :ignore:
 #+begin_export latex
  \begin{quote}
-"Senior Data Scientist with 7 years of experience in Data Science and total experience of 14 years in software industry, contributing as and individual contributor and team leader, building machine learning models from conception to completion to improve operational efficiency. Worked on  Natural Language Processing, Time Series Forecasting, Tabular Datasets, Graph Neural Nets and  Reinforcement Learning.  Have experience in traditional machine learning methods (Probabilistic Graphical Models), deep learning models (LSTMs, CNNs) and Transformer based models (BERT, GPT and LLMs)"
+"Senior Data Scientist with 7 years of experience in Data Science and total experience of 14 years in software industry, contributed as an individual contributor and team leader, building machine learning models from conception to completion to improve operational efficiency. Worked on  Natural Language Processing, Time Series Forecasting, Tabular Datasets. Experienced in traditional machine learning methods (Probabilistic Graphical Models), deep learning models (LSTMs, CNNs), Transformer based models (BERT, GPT and LLMs), Graph Neural Networks and Reinforcement Learning"
  \end{quote}
 #+end_export
 ** Skills
@@ -136,17 +136,20 @@
 *** Sr Data Scientist                                                :ignore:
 {{{cvevent(Sr. Data Scientist, HP Inc. May 2021 -- Ongoing, Bangalore\, India)}}}
 
-- Designed and Developed Large Language Models(LLMs) Based application for web content
-  filtering and topic recommendation (Currently in beta phase.)
-- Implemented evaluation scripts to benchmark LLM based application's performance on
-  accuracy, cost(token usage) and inference time reducing cost by 30%.
-- Mentored 3 data science interns on automating triaging with machine learning
-  on hardware logs using Graph Neural Networks and Generative Pretrained Transformer(GPT2)
-- Led the Small Language Models(SLMs) exploration and finetuning initatives
-  using PEFT techniques as an alternative to Large Language Models.
-- Developed Telemetery data analysis pipline processing 0.5 milllion customer record using Large Language Model
-  embeddings, BERT, dimensionality reduction(UMAP, Variational AutoEncoder) and
-  clustering HDBScan enhancing operational efficiency by 20%.
+- Created Large Language Models(LLMs) Based application for webpage content
+  filtering and topic recommendation, adhering to key NFRs which helped in
+  acheiving **Net Promoter Score of 65** during beta testing of HP's PrintAI
+  program.
+- Benchmarked LLM based application's performance on accuracy, cost(token usage)
+  and latency, comparing OpenAI, Llama and Mistral, reducing cost by **30%**. 
+- Mentored **3** data science interns on automated triaging using Graph Neural
+  Networks and LLMs.
+- Supervised Small Language Models(SLMs, less than **3B** parameters, **4bit**
+  quantized) exploration and **instruction finetuning**
+  initatives using PEFT acheiving an accuracy of 95%
+- Created Telemetery data analysis pipline processing **0.5** milllion customer
+  record using LLM embeddings, BERT, dimensionality reduction(UMAP, Variational
+  AutoEncoder) and clustering HDBScan, enhancing operational efficiency by **20%-30%**.
   
 {{{cvtag(Prompt Engineering)}}}
 {{{cvtag(GPT2)}}}
@@ -159,25 +162,23 @@
 {{{par-div}}}
 {{{cvevent(Sr. Software Engineer Machine Learning, HP Inc. July 2017 -- May 2021, Bangalore\, India)}}}
 
-- Analyzed Sales Time Series Data (Short term/Long term demand forecasting to
-  improve supply chain processes) using statistical models, Tree based models
-  and Generalized Additive Models.
-- Analyzed the effects of macro economic indicators on Demand Forecasts to
-  optimize inventory management.
+- Analyzed the effects of key macro economic indicators on long and short
+  term forecasts of product sales data which helped in acheiving on-time
+  delivery rate of **90-95%**
 - Implemented Hyperparameter Tuning module for Time Series models using Optuna
-  reducing the model execution time by 25%.
+  reducing the AutoML framework execution time by **20%-25%**
 - Worked on HP Personal Systems User Behavior Modelling using Tree Based Models,
-  SHAP, UMAP, HDBScan for targeted market campaigning.
+  SHAP, UMAP, HDBScan for targeted market campaigning
 - Developed simulator environment for online Reinforcement Learning for
-  automated hardware diagnostics.
-- Developed Sequence Tagging Model using BERT, LSTMs for discovering insights in
-  call center records which lead to 30% increase in operational efficency.
-- Mentored 4 interns on sequence tagging using Conditional Random Fields to
-  extract insights from call center records.
+  automated hardware diagnostics
+- Mentored **4** interns on Sequence Tagging Models using BERT, LSTMs,
+  Conditional Random Fields for discovering insights in call center records
+  which lead to **25%-30%** increase in operational efficency. 
 - Presented and communicated ideas about Probabilistic Modelling and
-  Reinforecement Learning to senior leadership
-- Analyzed Call center record using Bayesian Networks for predictive diagnostics
-  as an aid to call center executives.
+  Reinforcement Learning to senior leadership
+- Analyzed 0.1 million call center record using Bayesian Networks for predictive
+  diagnostics as an aid to call center executives and evaluate their decision
+  making process
 
 {{{cvtag(Time Series Analysis)}}}
 {{{cvtag(CART)}}}
@@ -190,12 +191,13 @@
 *** Software Engineer :ignore:
 {{{par-div}}}
 {{{cvevent(Senior Software Engineer, HP Inc. March 2015 -- June 2017, Bangalore\, India)}}}
-- Designed and Developed a parser for PostScript Language to extract images and
-  meta data which was impacting 50000 hp customers and saving 0.5 million dollars.
+- Created a parser for PostScript Language to extract images and
+  meta data which was impacting **50000** hp customers and saving **$0.5 million**
 - Worked on understanding PDF specification, design and implemented PDF document
-  processing using PDF libraries like iText and PDFium
-- Lead a team of 4 software engineers which delivered imaging processing solutions using
-  Python Imaging Library, Tessaract OCR to over 10 PSU banks in india
+  processing using PDF libraries like iText and PDFium which helped in saving
+  annual licensing cost of **$10,000**
+- Lead a team of **4** software engineers which delivered imaging processing solutions using
+  Python Imaging Library, Tessaract OCR to over **10 Public sector banks across India**
  
 {{{cvtag(Algorithms)}}}
 {{{cvtag(OpenSource Sofware)}}}
@@ -205,18 +207,24 @@
 *** Software Engineer :ignore:
 {{{par-div}}}
 {{{cvevent(Software Engineer, HP Inc. May 2010 -- Feb 2015, Bangalore\, India)}}}
-- Designed and Implemented Telemetry module in python using asyncio.
-- Led team of 7 software developers designing and implementing open source
-  software used by over 1 million customers.
-- Collaborated with customers and stakeholders, gathering requirements and
-  communicating constraints.
-- Developed UI, backend, modules in Python for the hp's open source imaging
-  solution (https://developers.hp.com/hp-linux-imaging-and-printing)
+- Designed and Implemented Telemetry module in python using asyncio which
+  enabled the collection of data across 1 millon devices used by hp customers
+- Collabrated with **7** software engineers on open source software used by **1**
+  million customers worldwide (https://developers.hp.com/hp-linux-imaging-and-printing)
 
 {{{cvtag(Python)}}}
 {{{cvtag(Open Source Software)}}}
 {{{cvtag(Asynchronous Programming)}}}
-{{{cvtag(Leadership Skills)}}}
+
+** Preventive Disclosures
+   * Gaurav Sood, Ranjith Kumar Gopa, Nandan Kumar Nidhi(May 2024) "Representing
+     Tabular Data using Large Lanugage Models"
+     https://www.tdcommons.org/dpubs_series/6998/ 
+   * Gaurav Sood (Feb 2021) "A Reinforcement Learning Approach to Printer Diagnostics"
+     https://www.tdcommons.org/dpubs_series/4244/
+   * Gaurav	Sood, Pavleen Kaur Brar, Raghu Anantharangachar (April 2019)
+     "Sequence Prediction for Print/Scan Issues using Bayesian Networks"
+     https://www.tdcommons.org/dpubs_series/2117/
 
 ** Certifications
    {{{cvevent(Deep Learning Specialization, Coursera Oct-2021 Credential ID G8PG2GY6WFS))}}}
@@ -233,18 +241,8 @@
 \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
 #+end_export
 
-** Preventive Disclosures
-   * Gaurav Sood, Ranjith Kumar Gopa, Nandan Kumar Nidhi(May 2024) "Representing
-     Tabular Data using Large Lanugage Models"
-     https://www.tdcommons.org/dpubs_series/6998/ 
-   * Gaurav Sood (Feb 2021) "A Reinforcement Learning Approach to Printer Diagnostics"
-     https://www.tdcommons.org/dpubs_series/4244/
-   * Gaurav	Sood, Pavleen Kaur Brar, Raghu Anantharangachar (April 2019)
-     "Sequence Prediction for Print/Scan Issues using Bayesian Networks"
-     https://www.tdcommons.org/dpubs_series/2117/
-
 ** Education
-{{{cvevent(Msc Research \ Speech Recoginition, Indian Institute of Science Bangalore 2006-2009)}}}
+{{{cvevent(MSc Research \ Speech Recoginition, Indian Institute of Science Bangalore 2006-2009)}}}
 - \faBook Speech Recognition using Support Vector Machines
 
 {{{divider}}}
