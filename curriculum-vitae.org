@@ -176,7 +176,7 @@
   which lead to **25%-30%** increase in operational efficency. 
 - Presented and communicated ideas about Probabilistic Modelling and
   Reinforcement Learning to senior leadership
-- Analyzed 0.1 million call center record using Bayesian Networks for predictive
+- Analyzed **0.1 million** call center record using Bayesian Networks for predictive
   diagnostics as an aid to call center executives and evaluate their decision
   making process
 
@@ -208,7 +208,7 @@
 {{{par-div}}}
 {{{cvevent(Software Engineer, HP Inc. May 2010 -- Feb 2015, Bangalore\, India)}}}
 - Designed and Implemented Telemetry module in python using asyncio which
-  enabled the collection of data across 1 millon devices used by hp customers
+  enabled the collection of data across **1 millon** devices used by hp customers
 - Collabrated with **7** software engineers on open source software used by **1**
   million customers worldwide (https://developers.hp.com/hp-linux-imaging-and-printing)
 
