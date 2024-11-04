@@ -126,7 +126,7 @@
 {{{cvtag(Generative AI)}}}
 {{{cvtag(Probabilistic Modelling)}}}
 {{{cvtag(Reinforcement Learning)}}}
-{{{cvtag(Open Source Software)}}}
+{{{cvtag(Time Series Forecasting)}}}
 {{{divider}}}
 
 {{{cvtag(Communication)}}}
@@ -139,14 +139,14 @@
 - Created Large Language Models(LLMs) Based application for webpage content
   filtering and topic recommendation, adhering to key NFRs which helped in
   acheiving **Net Promoter Score of 65** during beta testing of HP's PrintAI
-  program.
+  program
 - Benchmarked LLM based application's performance on accuracy, cost(token usage)
   and latency, comparing OpenAI, Llama and Mistral, reducing cost by **30%**. 
 - Mentored **3** data science interns on automated triaging using Graph Neural
-  Networks and LLMs.
+  Networks and LLMs, completed within an expedited time frame of **2 months**
 - Supervised Small Language Models(SLMs, less than **3B** parameters, **4bit**
   quantized) exploration and **instruction finetuning**
-  initatives using PEFT acheiving an accuracy of 95%
+  initatives using PEFT acheiving an accuracy of **95%**
 - Created Telemetery data analysis pipline processing **0.5** milllion customer
   record using LLM embeddings, BERT, dimensionality reduction(UMAP, Variational
   AutoEncoder) and clustering HDBScan, enhancing operational efficiency by **20%-30%**.
@@ -164,13 +164,14 @@
 
 - Analyzed the effects of key macro economic indicators on long and short
   term forecasts of product sales data which helped in acheiving on-time
-  delivery rate of **90-95%**
+  delivery rate of **90-95%**, working with HP's Digital Transformation Office
+  across US and Brazil
 - Implemented Hyperparameter Tuning module for Time Series models using Optuna
   reducing the AutoML framework execution time by **20%-25%**
 - Worked on HP Personal Systems User Behavior Modelling using Tree Based Models,
   SHAP, UMAP, HDBScan for targeted market campaigning
 - Developed simulator environment for online Reinforcement Learning for
-  automated hardware diagnostics
+  automated hardware diagnostics, as an alternative to Sequence Based Modelling
 - Mentored **4** interns on Sequence Tagging Models using BERT, LSTMs,
   Conditional Random Fields for discovering insights in call center records
   which lead to **25%-30%** increase in operational efficency. 
