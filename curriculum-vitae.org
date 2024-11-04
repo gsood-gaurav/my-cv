@@ -246,10 +246,6 @@
 {{{cvevent(MSc Research \ Speech Recoginition, Indian Institute of Science Bangalore 2006-2009)}}}
 - \faBook Speech Recognition using Support Vector Machines
 
-{{{divider}}}
-
-{{{cvevent(BTech Electronics and Communication Engg, GNE Ludhiana 2001-2005)}}}
-
 \end{paracol}
 \end{document}
 
