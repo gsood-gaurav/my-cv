@@ -156,7 +156,7 @@
 {{{cvtag(TinyLlama)}}}
 {{{Cvtag(FineTuning)}}}
 {{{cvtag(Embedding Models)}}}
-{{{cvtag(Graph Nerual Networks)}}}
+{{{cvtag(GraphML)}}}
 
 *** Sr. Software Engineer Machine Learning                           :ignore:
 {{{par-div}}}
